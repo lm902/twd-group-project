@@ -19,7 +19,6 @@
     "gulp-replace": "1.0.0",
     "gulp-sass": "4.0.2",
     "gulp-sourcemaps": "2.6.5",
-    "gulp-standard": "^14.0.0",
     "gulp-uglify-es": "1.0.4",
     "standard": "^14.3.1"
   },
@@ -27,5 +26,11 @@
     "test": "npx standard --fix",
     "start": "npx gulp",
     "build": "npx gulp build"
+  },
+  "standard": {
+    "ignore": [
+      "**/*.min.js",
+      "**/*.min.js.map"
+    ]
   }
 }
