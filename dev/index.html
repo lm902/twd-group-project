@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Put Web Page Title Here...</title>
+	<title>Food Explorer</title>
 
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
 	<!-- Put Google Fonts Here -->
@@ -17,7 +17,113 @@
 <body>
 
 <!-- Put your HTML code here... -->
-
+<header>
+	<a class="logo" href="/"><img src="./images/logo.png" alt="Food Explorer" /></a>
+	<div class="social-links">
+		<a href="#"><img src="./images/facebook.png" alt="Facebook" /></a>
+		<a href="#"><img src="./images/google.png" alt="Google+" /></a>
+		<a href="#"><img src="./images/twitter.png" alt="Twitter" /></a>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Reviews</a></li>
+			<li><a href="#">Recipes</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<div class="search">
+			<input placeholder="Search" id="search-kw" />
+			<button>ICON</button>
+		</div>
+	</nav>
+</header>
+<main>
+	<section class="big-images">
+		<div>
+			<picture>
+				<source srcset="./images/mussel.jpg" media="(min-width: 599.97px)" />
+				<img src="./images/mussel_small.jpg" alt="Mussel" />
+			</picture>
+			<span>Lorem ipsum dolor sit</span>
+		</div>
+		<div>
+			<picture>
+				<img src="./images/salad.jpg" alt="Mussel" />
+			</picture>
+			<span>Lorem, ipsum dolor</span>
+		</div>
+		<div>
+			<picture>
+				<img src="./images/pancake.jpg" alt="Mussel" />
+			</picture>
+			<span>Sit amet consectetur</span>
+		</div>
+	</section>
+	<section class="article-list">
+		<article>
+			<h1>Lorem ipsum dolor sit amet</h1>
+			<p>Posted by Mike Lee on Sunday, August 25, 2013</p>
+			<img src="./images/pasta.jpg" />
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo quisquam aliquam odit nesciunt quo soluta natus vitae amet, optio cum ipsum. Quas suscipit quos atque fugiat quae accusantium incidunt.</p>
+			<a href="#">Read more...</a>
+		</article>
+		<article>
+			<h1>Vel, eaque quisquam sit amet</h1>
+			<p>Posted by Mike Lee on Monday, July 29, 2013</p>
+			<img src="./images/ramen.jpg" />
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo quisquam aliquam odit nesciunt quo soluta natus vitae amet, optio cum ipsum. Quas suscipit quos atque fugiat quae accusantium incidunt.</p>
+			<a href="#">Read more...</a>
+		</article>
+	</section>
+	<a href="#" class="older-posts-button"><img src="./images/previous_btn.png" /></a>
+	<section class="latest-recipes sidebar">
+		<h1>Latest recipes</h1>
+		<ul>
+			<li>
+				<img src="./images/lamb_tb.jpg" />
+				<p>Met consec tetur elit</p>
+			</li>
+			<li>
+				<img src="./images/breakfast_tb.jpg" />
+				<p>Archi tecto dolores</p>
+			</li>
+			<li>
+				<img src="./images/calamari_tb.jpg" />
+				<p>Mexpe dita ciatis</p>
+			</li>
+			<li>
+				<img src="./images/steak_tb.jpg" />
+				<p>Fugiat eaque aore</p>
+			</li>
+		</ul>
+	</section>
+	<section class="cuisines sidebar">
+		<h1>Cuisines</h1>
+		<ul>
+			<li><a href="#">American (95)</a></li>
+			<li><a href="#">Asian (33)</a></li>
+			<li><a href="#">Cambodian (3)</a></li>
+			<li><a href="#">Chinese (281)</a></li>
+			<li><a href="#">Filipino (8)</a></li>
+			<li><a href="#">French (40)</a></li>
+			<li><a href="#">German (7)</a></li>
+			<li><a href="#">Greek (29)</a></li>
+			<li><a href="#">Indian (44)</a></li>
+			<li><a href="#">Italian (60)</a></li>
+			<li><a href="#">Jamaican (7)</a></li>
+			<li><a href="#">Japanese (202)</a></li>
+			<li><a href="#">Korean (120)</a></li>
+			<li><a href="#">Malaysian (12)</a></li>
+			<li><a href="#">Mediterranean (9)</a></li>
+			<li><a href="#">Mexican (25)</a></li>
+			<li><a href="#">Southern (14)</a></li>
+		</ul>
+	</section>
+</main>
+<footer>
+	© 2013 Site designend by Michael Lee. For educational purpose only. <a href="#">Image Credits</a>
+</footer>
 
 <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 <!-- <script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script> -->
