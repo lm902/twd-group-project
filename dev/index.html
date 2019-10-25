@@ -19,12 +19,16 @@
 <!-- Put your HTML code here... -->
 <header>
 	<a class="logo" href="/"><img src="./images/logo.png" alt="Food Explorer" /></a>
-	<div class="social-links">
+	<div class="social-links outsidenav">
 		<a href="#"><img src="./images/facebook.png" alt="Facebook" /></a>
 		<a href="#"><img src="./images/google.png" alt="Google+" /></a>
 		<a href="#"><img src="./images/twitter.png" alt="Twitter" /></a>
 	</div>
 	<nav>
+		<div class="search insidenav">
+			<input placeholder="Search" id="search-kw" />
+			<button>ICON</button>
+		</div>
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
@@ -32,9 +36,10 @@
 			<li><a href="#">Recipes</a></li>
 			<li><a href="#">Contact</a></li>
 		</ul>
-		<div class="search insidenav">
-			<input placeholder="Search" id="search-kw" />
-			<button>ICON</button>
+		<div class="social-links insidenav">
+			<a href="#"><img src="./images/facebook.png" alt="Facebook" /></a>
+			<a href="#"><img src="./images/google.png" alt="Google+" /></a>
+			<a href="#"><img src="./images/twitter.png" alt="Twitter" /></a>
 		</div>
 	</nav>
 	<div class="search outsidenav">
@@ -53,13 +58,13 @@
 		</div>
 		<div>
 			<picture>
-				<img src="./images/salad.jpg" alt="Mussel" />
+				<img src="./images/salad.jpg" alt="Salad" />
 			</picture>
 			<span>Lorem, ipsum dolor</span>
 		</div>
 		<div>
 			<picture>
-				<img src="./images/pancake.jpg" alt="Mussel" />
+				<img src="./images/pancake.jpg" alt="Pancake" />
 			</picture>
 			<span>Sit amet consectetur</span>
 		</div>
@@ -126,7 +131,7 @@
 	</section>
 </main>
 <footer>
-	© 2013 Site designend by Michael Lee. For educational purpose only. <a href="#">Image Credits</a>
+	<p>© 2013 Site designend by Michael Lee. For educational purpose only. <a href="#">Image Credits</a></p>
 </footer>
 
 <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
