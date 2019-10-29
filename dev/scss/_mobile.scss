@@ -1,0 +1,163 @@
+.outsidenav {
+    display: none;
+}
+
+main{
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.cuisines{
+    margin: 10px;
+    background-color: $white;
+    order: 3;
+
+    h1 {
+        background-color: $blue;
+        margin: 0;
+        padding: 10px;
+        color: $white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-right: 100px;
+    }
+
+    li {
+        padding: 5px;
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: $black
+    }
+}
+
+.latest-recipes {
+    margin: 10px;
+    background-color: $white;
+    order: 2;
+
+    h1 {
+        color: $white;
+        background-color: $blue;
+        margin: 0;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+        display: flex;
+        padding: 10px;
+
+        p{
+            padding-left: 10px;
+        }
+    }
+
+    li:nth-child(2n) {
+        background-color: rgba($grey, .3);
+    }
+}
+
+nav{
+    display: none;
+
+}
+
+.big-images {
+
+    div {
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    picture{
+        padding: 10px 0;
+    }
+
+    span {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(black, 0.6);
+        color: white;
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        z-index: 200;
+        line-height: 1.4em;
+    }
+}
+
+.article-list {
+    order: 5;
+    
+    article{
+        margin: 10px;
+        background-color: $white;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 3em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: $blue;
+        margin: 0;
+    }
+
+    img{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: $white;
+        background-color: $blue;
+        font-weight: bold;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    div{
+        text-align: right;
+    }
+}
+
+.older-posts-button {
+    order: 6;
+    overflow: hidden;
+    width: 187px;
+    height: 21px;
+    margin: 30px 0;
+}
+
+footer {
+    margin: 0;
+    background-color: $blue;
+    padding: 10px 20px;
+    color: $white;
+    text-align: center;
+
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+}

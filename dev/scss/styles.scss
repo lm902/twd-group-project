@@ -1,6 +1,19 @@
 @charset "utf-8";
 
 // Place your Sass imports here...
+@import 'fontawesome.scss';
+@import 'brands.scss';
+
+
+$blue: #1a71a9;
+$white: white;
+$grey: rgba(grey, 0.5);
+$black: black;
 
 
 
+@import 'mobile.scss';
+
+.icons {
+    color: $blue
+}
