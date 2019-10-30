@@ -1,6 +1,4 @@
 // Write your JavaScript here...
-$('#menu-btn').click(clickHandler);
-
-function clickHandler(){
-    $('nav').toggleClass('show');
-}
+$('#menu-btn').click(() => {
+    $('nav').toggleClass('show')
+});

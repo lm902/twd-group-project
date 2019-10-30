@@ -2,6 +2,24 @@
     display: none;
 }
 
+.topbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: block;
+}
+
+
+.menu-btn {
+    display: block;
+    color: $blue;
+    background: none;
+    border: none;
+    font-size: 3em;
+}
+
 main{
     background-color: $grey;
     display: flex;
@@ -71,10 +89,48 @@ main{
     }
 }
 
-nav{
+.show{
+    display: block;
+}
+
+nav {
     display: none;
 
+    .search {
+        input {
+            line-height: 2em;
+        }
+        button {
+            background: none;
+            border: none;
+        }
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+        width: 100%;
+        background-color: $blue;
+        text-align: center;
+        
+        a{
+            color: $white;
+            text-decoration: none;
+            line-height: 1.4 em;
+            width: 100%;
+            font-size: 2em;
+        }
+    }
+
+    .social-links{
+        font-size: 2em;
+        text-align: center;
+    }
 }
+
 
 .big-images {
 
