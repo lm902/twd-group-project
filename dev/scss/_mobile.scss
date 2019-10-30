@@ -97,10 +97,21 @@ nav {
     display: none;
 
     .search {
+        position: relative;
+        margin: 0;
+
         input {
-            line-height: 2em;
+            line-height: 3em;
+            width: 100%;
+            margin: 0;
+            background-color: $grey;
+            border: solid $blue 2px;
         }
         button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
             background: none;
             border: none;
         }
@@ -108,6 +119,8 @@ nav {
 
     ul {
         padding: 0;
+        margin: 0;
+        width: 100%;
     }
 
     li{
@@ -128,6 +141,7 @@ nav {
     .social-links{
         font-size: 2em;
         text-align: center;
+        margin: 5px;
     }
 }
 
