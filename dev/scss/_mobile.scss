@@ -18,6 +18,7 @@
     background: none;
     border: none;
     font-size: 3em;
+    cursor: pointer;
 }
 
 main{
@@ -36,7 +37,7 @@ main{
         margin: 0;
         padding: 10px;
         color: $white;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $robotobold;
     }
 
     ul {
@@ -66,7 +67,7 @@ main{
         background-color: $blue;
         margin: 0;
         padding: 10px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $robotobold;
     }
 
     ul{
@@ -114,27 +115,33 @@ nav {
             right: 15px;
             background: none;
             border: none;
+            cursor: pointer;
         }
     }
 
     ul {
         padding: 0;
         margin: 0;
-        width: 100%;
     }
 
     li{
         list-style: none;
-        width: 100%;
         background-color: $blue;
         text-align: center;
         
         a{
+            display: block;
             color: $white;
             text-decoration: none;
             line-height: 1.4 em;
             width: 100%;
             font-size: 2em;
+            font-family: $robotobold;
+
+            #{$link-hover-selector} {
+                background-color: $white;
+                color: $blue
+            }
         }
     }
 
@@ -142,6 +149,36 @@ nav {
         font-size: 2em;
         text-align: center;
         margin: 5px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+        a {
+            position: relative;
+            transition: all 0.3s ease;
+
+
+            #{$link-hover-selector} {
+              transform: translateY(-40px);
+            }
+
+            .top{
+               color: $blue;
+                text-decoration: none;
+                padding: 5px;
+            }
+    
+            .bottom{
+                position: absolute;
+                right: 0;
+                top: 40px;
+                padding: 5px;
+                color: $grey;
+                text-decoration: none;
+            }
+        }
+
+        
     }
 }
 
@@ -165,10 +202,10 @@ nav {
         bottom: 5px;
         left: 0;
         width: 100%;
-        background-color: rgba(black, 0.6);
-        color: white;
+        background-color: rgba($black, 0.6);
+        color: $white;
         font-size: 2em;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $robotobold;
         z-index: 200;
         line-height: 1.4em;
     }
@@ -185,7 +222,7 @@ nav {
 
     h1 {
         font-size: 3em;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $robotobold;
         color: $blue;
         margin: 0;
     }
@@ -204,6 +241,7 @@ nav {
         padding: 10px;
         margin-left: auto;
         margin-right: 20px;
+        border: 2px solid black;
     }
 
     div{

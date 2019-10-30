@@ -9,11 +9,9 @@ $blue: #1a71a9;
 $white: white;
 $grey: rgba(grey, 0.5);
 $black: black;
+$link-hover-selector: '&:hover, &:focus, &:active';
+$robotobold: 'Roboto', sans-serif;
 
 
 @import 'reset';
 @import 'mobile.scss';
-
-.icons {
-    color: $blue
-}
