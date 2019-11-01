@@ -7,11 +7,16 @@
 
 $blue: #1a71a9;
 $white: white;
-$grey: rgba(grey, 0.5);
+$grey: #e9e9e9;
 $black: black;
 $link-hover-selector: '&:hover, &:focus, &:active';
 $narrowfont: 'Barlow Semi Condensed', sans-serif;
 
 
 @import 'reset';
+
 @import 'mobile.scss';
+
+@media screen and (min-width: 600px) {
+  @import 'tablet.scss';
+}
