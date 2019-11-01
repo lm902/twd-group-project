@@ -33,8 +33,13 @@
 
 main{
     background-image: url("../images/bg.jpg");
+    margin: 0;
     display: flex;
     flex-direction: column;
+}
+
+body{
+  margin: 0;
 }
 
 .cuisines{
@@ -204,6 +209,7 @@ nav {
 
 
 .big-images {
+  margin: 10px;
 
     div {
         position: relative;
