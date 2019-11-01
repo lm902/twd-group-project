@@ -31,7 +31,9 @@
   "standard": {
     "ignore": [
       "**/*.min.js",
-      "**/*.min.js.map"
+      "**/*.min.js.map",
+      "**/fonts/**/*.js",
+      "gulpfile.js"
     ]
   }
 }

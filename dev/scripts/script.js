@@ -1,4 +1,5 @@
-// Write your JavaScript here...
+/* global $ */
+
 $('#menu-btn').click(() => {
-    $('nav').toggleClass('show')
-});
+  $('nav').toggleClass('show')
+})
