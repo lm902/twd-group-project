@@ -43,7 +43,7 @@ body{
 }
 
 .cuisines{
-    margin: 10px;
+    margin: 0 10px;
     background-color: $white;
     order: 3;
 
@@ -52,7 +52,8 @@ body{
         margin: 0;
         padding: 10px;
         color: $white;
-        font-family: $robotobold;
+        font-family: $narrowfont;
+        text-transform: uppercase;
     }
 
     ul {
@@ -76,6 +77,7 @@ body{
 
 .latest-recipes {
     margin: 10px;
+    margin-top: 0;
     background-color: $white;
     order: 2;
 
@@ -84,7 +86,8 @@ body{
         background-color: $blue;
         margin: 0;
         padding: 10px;
-        font-family: $robotobold;
+        font-family: $narrowfont;
+        text-transform: uppercase;
     }
 
     ul{
@@ -100,7 +103,7 @@ body{
         p{
             display: block;
             padding-left: 10px;
-            font-family: $robotobold;
+            font-family: $narrowfont;
             text-transform: uppercase;
             margin: auto 0;
         }
@@ -161,7 +164,7 @@ nav {
             line-height: 1.4 em;
             width: 100%;
             font-size: 2em;
-            font-family: $robotobold;
+            font-family: $narrowfont;
 
             #{$link-hover-selector} {
                 background-color: $white;
@@ -232,9 +235,10 @@ nav {
         background-color: rgba($black, 0.6);
         color: $white;
         font-size: 2em;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: $narrowfont;
+        font-weight: bold;
         z-index: 200;
-        line-height: 2.4em;
+        line-height: 2.2em;
         text-transform: uppercase;
     }
 }
@@ -250,9 +254,10 @@ nav {
 
     h1 {
         font-size: 3em;
-        font-family: $robotobold;
+        font-family: $narrowfont;
         color: $blue;
         margin: 0;
+        text-transform: uppercase;
     }
 
     img{
