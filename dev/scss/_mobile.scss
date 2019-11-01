@@ -2,6 +2,10 @@
     display: none;
 }
 
+a, p{
+  font-family: $narrowfont;
+}
+
 .topbar{
     display: flex;
     justify-content: space-between;
