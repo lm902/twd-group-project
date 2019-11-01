@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 // Place your Sass imports here...
-@import 'fontawesome.scss';
-@import 'brands.scss';
+@import 'fontawesome';
+@import 'brands';
 
 
 $blue: #1a71a9;
@@ -15,8 +15,12 @@ $narrowfont: 'Barlow Semi Condensed', sans-serif;
 
 @import 'reset';
 
-@import 'mobile.scss';
+@import 'mobile';
 
 @media screen and (min-width: 600px) {
-  @import 'tablet.scss';
+  @import 'tablet';
+}
+
+@media screen and (min-width: 960px) {
+  @import 'desktop.scss';
 }
